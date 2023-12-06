@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA41192F2B20003A004196E2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA41192E2B20003A004196E2 /* WidgetKit.framework */; };
+		CA4119312B20003A004196E2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4119302B20003A004196E2 /* SwiftUI.framework */; };
+		CA4119342B20003A004196E2 /* BarkLogWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4119332B20003A004196E2 /* BarkLogWidgetBundle.swift */; };
+		CA4119362B20003A004196E2 /* BarkLogWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4119352B20003A004196E2 /* BarkLogWidget.swift */; };
+		CA4119382B20003A004196E2 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4119372B20003A004196E2 /* AppIntent.swift */; };
+		CA41193A2B20003B004196E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4119392B20003B004196E2 /* Assets.xcassets */; };
+		CA41193E2B20003B004196E2 /* BarkLogWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CA41192C2B200039004196E2 /* BarkLogWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CA4119452B200244004196E2 /* Downloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4119442B200244004196E2 /* Downloads.swift */; };
+		CA4119482B200305004196E2 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4119472B200305004196E2 /* Buttons.swift */; };
+		CA41194A2B200579004196E2 /* ActionIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4119492B200579004196E2 /* ActionIntent.swift */; };
+		CA41194C2B200821004196E2 /* UpdateClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA41194B2B200821004196E2 /* UpdateClass.swift */; };
+		CAE7A12F2B1FFD2000CFA22B /* BarkLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7A12E2B1FFD2000CFA22B /* BarkLogApp.swift */; };
+		CAE7A1312B1FFD2000CFA22B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7A1302B1FFD2000CFA22B /* ContentView.swift */; };
+		CAE7A1332B1FFD2100CFA22B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE7A1322B1FFD2100CFA22B /* Assets.xcassets */; };
+		CAE7A1362B1FFD2100CFA22B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE7A1352B1FFD2100CFA22B /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA41193C2B20003B004196E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE7A1232B1FFD2000CFA22B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA41192B2B200039004196E2;
+			remoteInfo = BarkLogWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA41193F2B20003B004196E2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CA41193E2B20003B004196E2 /* BarkLogWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA41192C2B200039004196E2 /* BarkLogWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BarkLogWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA41192E2B20003A004196E2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CA4119302B20003A004196E2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CA4119332B20003A004196E2 /* BarkLogWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarkLogWidgetBundle.swift; sourceTree = "<group>"; };
+		CA4119352B20003A004196E2 /* BarkLogWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarkLogWidget.swift; sourceTree = "<group>"; };
+		CA4119372B20003A004196E2 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		CA4119392B20003B004196E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA41193B2B20003B004196E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA4119442B200244004196E2 /* Downloads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloads.swift; sourceTree = "<group>"; };
+		CA4119472B200305004196E2 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		CA4119492B200579004196E2 /* ActionIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionIntent.swift; sourceTree = "<group>"; };
+		CA41194B2B200821004196E2 /* UpdateClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateClass.swift; sourceTree = "<group>"; };
+		CAE7A12B2B1FFD2000CFA22B /* BarkLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarkLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE7A12E2B1FFD2000CFA22B /* BarkLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarkLogApp.swift; sourceTree = "<group>"; };
+		CAE7A1302B1FFD2000CFA22B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CAE7A1322B1FFD2100CFA22B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAE7A1352B1FFD2100CFA22B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA4119292B200039004196E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4119312B20003A004196E2 /* SwiftUI.framework in Frameworks */,
+				CA41192F2B20003A004196E2 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE7A1282B1FFD2000CFA22B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA41192D2B20003A004196E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA41192E2B20003A004196E2 /* WidgetKit.framework */,
+				CA4119302B20003A004196E2 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA4119322B20003A004196E2 /* BarkLogWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CA4119432B200225004196E2 /* Model */,
+				CA4119332B20003A004196E2 /* BarkLogWidgetBundle.swift */,
+				CA4119352B20003A004196E2 /* BarkLogWidget.swift */,
+				CA4119372B20003A004196E2 /* AppIntent.swift */,
+				CA4119472B200305004196E2 /* Buttons.swift */,
+				CA4119392B20003B004196E2 /* Assets.xcassets */,
+				CA41193B2B20003B004196E2 /* Info.plist */,
+				CA4119492B200579004196E2 /* ActionIntent.swift */,
+				CA41194B2B200821004196E2 /* UpdateClass.swift */,
+			);
+			path = BarkLogWidget;
+			sourceTree = "<group>";
+		};
+		CA4119432B200225004196E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA4119442B200244004196E2 /* Downloads.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAE7A1222B1FFD2000CFA22B = {
+			isa = PBXGroup;
+			children = (
+				CAE7A12D2B1FFD2000CFA22B /* BarkLog */,
+				CA4119322B20003A004196E2 /* BarkLogWidget */,
+				CA41192D2B20003A004196E2 /* Frameworks */,
+				CAE7A12C2B1FFD2000CFA22B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAE7A12C2B1FFD2000CFA22B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAE7A12B2B1FFD2000CFA22B /* BarkLog.app */,
+				CA41192C2B200039004196E2 /* BarkLogWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAE7A12D2B1FFD2000CFA22B /* BarkLog */ = {
+			isa = PBXGroup;
+			children = (
+				CAE7A12E2B1FFD2000CFA22B /* BarkLogApp.swift */,
+				CAE7A1302B1FFD2000CFA22B /* ContentView.swift */,
+				CAE7A1322B1FFD2100CFA22B /* Assets.xcassets */,
+				CAE7A1342B1FFD2100CFA22B /* Preview Content */,
+			);
+			path = BarkLog;
+			sourceTree = "<group>";
+		};
+		CAE7A1342B1FFD2100CFA22B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CAE7A1352B1FFD2100CFA22B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA41192B2B200039004196E2 /* BarkLogWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA4119422B20003B004196E2 /* Build configuration list for PBXNativeTarget "BarkLogWidgetExtension" */;
+			buildPhases = (
+				CA4119282B200039004196E2 /* Sources */,
+				CA4119292B200039004196E2 /* Frameworks */,
+				CA41192A2B200039004196E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarkLogWidgetExtension;
+			productName = BarkLogWidgetExtension;
+			productReference = CA41192C2B200039004196E2 /* BarkLogWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CAE7A12A2B1FFD2000CFA22B /* BarkLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE7A1392B1FFD2100CFA22B /* Build configuration list for PBXNativeTarget "BarkLog" */;
+			buildPhases = (
+				CAE7A1272B1FFD2000CFA22B /* Sources */,
+				CAE7A1282B1FFD2000CFA22B /* Frameworks */,
+				CAE7A1292B1FFD2000CFA22B /* Resources */,
+				CA41193F2B20003B004196E2 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA41193D2B20003B004196E2 /* PBXTargetDependency */,
+			);
+			name = BarkLog;
+			productName = BarkLog;
+			productReference = CAE7A12B2B1FFD2000CFA22B /* BarkLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAE7A1232B1FFD2000CFA22B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CA41192B2B200039004196E2 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					CAE7A12A2B1FFD2000CFA22B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = CAE7A1262B1FFD2000CFA22B /* Build configuration list for PBXProject "BarkLog" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAE7A1222B1FFD2000CFA22B;
+			productRefGroup = CAE7A12C2B1FFD2000CFA22B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAE7A12A2B1FFD2000CFA22B /* BarkLog */,
+				CA41192B2B200039004196E2 /* BarkLogWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA41192A2B200039004196E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA41193A2B20003B004196E2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE7A1292B1FFD2000CFA22B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE7A1362B1FFD2100CFA22B /* Preview Assets.xcassets in Resources */,
+				CAE7A1332B1FFD2100CFA22B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA4119282B200039004196E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4119482B200305004196E2 /* Buttons.swift in Sources */,
+				CA4119362B20003A004196E2 /* BarkLogWidget.swift in Sources */,
+				CA4119452B200244004196E2 /* Downloads.swift in Sources */,
+				CA4119342B20003A004196E2 /* BarkLogWidgetBundle.swift in Sources */,
+				CA41194A2B200579004196E2 /* ActionIntent.swift in Sources */,
+				CA41194C2B200821004196E2 /* UpdateClass.swift in Sources */,
+				CA4119382B20003A004196E2 /* AppIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE7A1272B1FFD2000CFA22B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE7A1312B1FFD2000CFA22B /* ContentView.swift in Sources */,
+				CAE7A12F2B1FFD2000CFA22B /* BarkLogApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA41193D2B20003B004196E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA41192B2B200039004196E2 /* BarkLogWidgetExtension */;
+			targetProxy = CA41193C2B20003B004196E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA4119402B20003B004196E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9XN4AG4472;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BarkLogWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BarkLogWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.basgallop.Swift-BarkLogApp.BarkLog.BarkLogWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA4119412B20003B004196E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9XN4AG4472;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BarkLogWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BarkLogWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.basgallop.Swift-BarkLogApp.BarkLog.BarkLogWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CAE7A1372B1FFD2100CFA22B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAE7A1382B1FFD2100CFA22B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAE7A13A2B1FFD2100CFA22B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BarkLog/Preview Content\"";
+				DEVELOPMENT_TEAM = 9XN4AG4472;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.basgallop.Swift-BarkLogApp.BarkLog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAE7A13B2B1FFD2100CFA22B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BarkLog/Preview Content\"";
+				DEVELOPMENT_TEAM = 9XN4AG4472;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.basgallop.Swift-BarkLogApp.BarkLog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA4119422B20003B004196E2 /* Build configuration list for PBXNativeTarget "BarkLogWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4119402B20003B004196E2 /* Debug */,
+				CA4119412B20003B004196E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE7A1262B1FFD2000CFA22B /* Build configuration list for PBXProject "BarkLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE7A1372B1FFD2100CFA22B /* Debug */,
+				CAE7A1382B1FFD2100CFA22B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE7A1392B1FFD2100CFA22B /* Build configuration list for PBXNativeTarget "BarkLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE7A13A2B1FFD2100CFA22B /* Debug */,
+				CAE7A13B2B1FFD2100CFA22B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAE7A1232B1FFD2000CFA22B /* Project object */;
+}
