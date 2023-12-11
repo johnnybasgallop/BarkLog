@@ -32,6 +32,7 @@ struct Provider: AppIntentTimelineProvider {
     }
 }
 
+
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let configuration: ConfigurationAppIntent
@@ -61,7 +62,7 @@ struct BarkLogWidget: Widget {
 }
 
 
-#Preview(as: .systemSmall) {
+#Preview(as: .systemMedium) {
     BarkLogWidget()
 } timeline: {
     SimpleEntry(date: .now, configuration: .init())

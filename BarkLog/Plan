@@ -1,0 +1,63 @@
+
+User Authentication:
+* AppleId Sign in with Firebase
+
+Database:
+Firebase firestore DB:
+
+UserId: String{
+    Day: Date{
+        Item: String
+        Timestamp: TimeStamp
+    }
+}
+
+
+Models:
+
+struct Item: ObservableObject {
+    var TimeStamp: Time
+    var Day: Date
+    var Item: String
+}
+
+
+functions:
+
+AddItem(Type: String, Time: TimeStamp, Day: Date) {
+    //Firebase add document:
+    //for location of doc, pass in the UsersId and the Day
+    //Add in the type and the timestamp into the document
+    //Append it to a local published Array
+    
+}
+
+
+GetRecentItem(Day: Date) -> String{
+    //Search for the document with the most recent timestamp
+    // use the userId => Day for the location
+    //retrieve both the TimeStamp and the Item
+    Pass it into this function:
+    
+    
+    FormatMostRecentItem(TimeStamp: Time, Item: String) -> String {
+        // var minsAgo = Time param - Time now (format it into X minutes ago)
+        
+        return "\(Item) \(minsAgo)"
+    }
+    
+    var RecentItem = FormatMostRecentItem(TimeStamp, Item)
+    
+    return RecentItem
+}
+
+
+GetAllItems(Day: Date) -> [Item]{
+    //Retrieve all items for a specific day
+    //for location pass in the UserId => Day
+    // Add all the returned items into the local published Array
+    
+}
+
+
+
