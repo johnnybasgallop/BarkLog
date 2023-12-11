@@ -15,6 +15,7 @@ struct SignUpScreen: View {
     
     var body: some View {
         VStack{
+            
             Image("dogIcon")
                 .resizable()
                 .frame(width: screenWidth * 0.7, height: screenWidth * 0.7).offset(x:0,y: screenHeight * 0.1)
@@ -30,6 +31,9 @@ struct SignUpScreen: View {
             } onCompletion: { result in
                 signInViewModel.SignInWithAppleCompletion(result)
             }.frame(width: 300, height: 50).cornerRadius(10).offset(y: -screenHeight * 0.05)
+        }
+        .onAppear{
+            print("signup appeard")
         }
     }
 }

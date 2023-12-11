@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA044ECB2B272AED0007554C /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA044ECA2B272AED0007554C /* SharedData.swift */; };
+		CA044ECC2B272C810007554C /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA044ECA2B272AED0007554C /* SharedData.swift */; };
 		CA41192F2B20003A004196E2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA41192E2B20003A004196E2 /* WidgetKit.framework */; };
 		CA4119312B20003A004196E2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4119302B20003A004196E2 /* SwiftUI.framework */; };
 		CA4119342B20003A004196E2 /* BarkLogWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4119332B20003A004196E2 /* BarkLogWidgetBundle.swift */; };
@@ -82,6 +84,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA044EC62B2729830007554C /* BarkLogWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BarkLogWidgetExtension.entitlements; sourceTree = "<group>"; };
+		CA044ECA2B272AED0007554C /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
 		CA41192C2B200039004196E2 /* BarkLogWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BarkLogWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA41192E2B20003A004196E2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		CA4119302B20003A004196E2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -197,6 +201,8 @@
 		CAE7A1222B1FFD2000CFA22B = {
 			isa = PBXGroup;
 			children = (
+				CA044ECA2B272AED0007554C /* SharedData.swift */,
+				CA044EC62B2729830007554C /* BarkLogWidgetExtension.entitlements */,
 				CAE7A12D2B1FFD2000CFA22B /* BarkLog */,
 				CA4119322B20003A004196E2 /* BarkLogWidget */,
 				CA41192D2B20003A004196E2 /* Frameworks */,
@@ -373,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA044ECC2B272C810007554C /* SharedData.swift in Sources */,
 				CA4119482B200305004196E2 /* Buttons.swift in Sources */,
 				CA4119362B20003A004196E2 /* BarkLogWidget.swift in Sources */,
 				CA6662E82B26256600AE5682 /* Main.swift in Sources */,
@@ -388,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA044ECB2B272AED0007554C /* SharedData.swift in Sources */,
 				CAE7A1312B1FFD2000CFA22B /* ContentView.swift in Sources */,
 				CAE7A12F2B1FFD2000CFA22B /* BarkLogApp.swift in Sources */,
 				CADC5DB92B25230F00773547 /* SignInViewModel.swift in Sources */,
@@ -412,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BarkLogWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DB62R67D27;
@@ -439,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BarkLogWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DB62R67D27;

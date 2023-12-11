@@ -40,10 +40,12 @@ struct SimpleEntry: TimelineEntry {
 
 struct BarkLogWidgetEntryView : View {
     var entry: Provider.Entry
+    
 
     var body: some View {
         VStack {
             Text(Update.shared.update)
+            
             Buttons()
         
         }
@@ -55,6 +57,7 @@ struct BarkLogWidget: Widget {
 
     var body: some WidgetConfiguration {
         AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
+            
             BarkLogWidgetEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }.supportedFamilies([.systemMedium])

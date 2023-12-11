@@ -27,6 +27,8 @@ struct ActionIntent: AppIntent{
   
     
     func perform() async throws -> some IntentResult {
+    
+        
         
         switch(type){
         case "poo":
